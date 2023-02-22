@@ -1,6 +1,6 @@
 # nRF52840 Connnect Kit
-
-[![Documentation](https://github.com/makerdiary/nrf52840-connectkit/actions/workflows/documentation.yml/badge.svg?branch=main)](https://github.com/makerdiary/nrf52840-connectkit/actions/workflows/documentation.yml?query=branch%3Amain)
+[![Current Version](https://img.shields.io/github/tag/makerdiary/nrf52840-connectkit.svg)](https://github.com/makerdiary/nrf52840-connectkit/tags)
+[![Documentation](https://github.com/makerdiary/nrf52840-connectkit/actions/workflows/documentation.yml/badge.svg?branch=main)](https://wiki.makerdiary.com/nrf52840-connectkit)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?color=informational)](/.github/CONTRIBUTING.md)
 
 > Connected Prototyping Kit featuring the nRF52840 SoC
@@ -45,7 +45,7 @@ nRF52840 Connect Kit supports [nRF Connect SDK][ncs-guide], which integrates the
 
 The following figure illustrates the nRF52840 Connect Kit hardware diagram. The design is available in Chip antenna and U.FL receptacle options, both have most of the same components except the antenna interface.
 
-[![Hardware Diagram](./docs/assets/images/pinout.png)](./docs/assets/attachments/nrf52840-connectkit-quick-start-guide.pdf)
+[![Hardware Diagram](./docs/assets/images/pinout.png)][quick-start]
 
 ## Documentation
 
