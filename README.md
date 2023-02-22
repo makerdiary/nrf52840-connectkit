@@ -1,5 +1,8 @@
 # nRF52840 Connnect Kit
 
+[![Documentation](https://github.com/makerdiary/nrf52840-connectkit/actions/workflows/documentation.yml/badge.svg?branch=main)](https://github.com/makerdiary/nrf52840-connectkit/actions/workflows/documentation.yml?query=branch%3Amain)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?color=informational)](/.github/CONTRIBUTING.md)
+
 > Connected Prototyping Kit featuring the nRF52840 SoC
 
 ## Introduction
