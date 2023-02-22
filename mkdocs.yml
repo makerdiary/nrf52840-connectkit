@@ -1,0 +1,286 @@
+# Copyright (c) 2016-2023 Makerdiary
+#
+# SPDX-License-Identifier: Apache-2.0
+
+# Project information
+site_name: nRF52840 Connect Kit
+site_url: https://wiki.makerdiary.com/nrf52840-connectkit
+site_author: makerdiary
+site_description: >-
+  The documentation offers all you need to start developing with 
+  nRF52840 Connect Kit.
+
+# Repository
+repo_name: makerdiary/nrf52840-connectkit
+repo_url: https://github.com/makerdiary/nrf52840-connectkit
+edit_uri: ""
+#edit_uri: edit/main/docs
+
+# Copyright
+copyright: 'Copyright &copy; 2016-2023 <a href="https://makerdiary.com" target="_blank">makerdiary</a>'
+
+# Configuration
+theme:
+  name: material
+  custom_dir: docs/.overrides
+  features:
+    # - announce.dismiss
+    - content.code.annotate
+    - content.code.copy
+    # - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # - navigation.expand
+    - navigation.indexes
+    - navigation.instant
+    - navigation.prune
+    # - navigation.sections
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - navigation.footer
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    # - toc.integrate
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/favicon.png
+  icon:
+    logo: logo
+  # Announcement bar
+  announcement: ""
+  # Home page
+  home:
+    hero:
+      title: Connected Prototyping Kit featuring the nRF52840 SoC
+      description: >-
+        With nRF52840 Connect Kit you can quickly and easily build your next connected project supporting
+        Bluetooth LE, Bluetooth mesh, NFC, Thread, Zigbee, 802.15.4, ANT and 2.4 GHz proprietary stacks.
+        Easy-to-use form factor, USB-C, 64 Mbit QSPI flash, flexible power management and a rich set of
+        features enable designs to meet a wide range of applications.
+      image: assets/images/nrf52840_connectkit_hero.png
+      button_primary:
+        label: Quick Start
+        link: out-of-box-experience
+      button_secondary:
+        label: Buy Now
+        link: https://makerdiary.com/products/nrf52840-connectkit
+    multicolumn:
+      id: everything-you-would-expect
+      heading: Everything you would expect
+      columns:
+        - icon: nordic-chip
+          title: Featuring the nRF52840 SoC
+          description: >-
+            Built around the nRF52840 SoC, featuring a 64 MHz Arm® Cortex™-M4F processor with 1 MB
+            Flash, 256 KB RAM and ARM TrustZone® CryptoCell cryptographic unit, supporting Bluetooth LE,
+            Bluetooth mesh, Thread, Zigbee, 802.15.4, ANT and 2.4 GHz proprietary stacks.
+        - icon: material/hexagon-multiple
+          title: Rich peripherals and features
+          description: >-
+            Feature external 64 Mbit QSPI flash, User programmable RGB LED and Buttons as well as numerous
+            peripherals such as USB 2.0, NFC-A, GPIO, UART, SPI, TWI, PDM, I2S, QSPI, PWM, ADC, QDEC to support
+            a wide range of applications.
+        - icon: material/chip
+          title: Easy-to-use Form Factor
+          description: >-
+            Easy-to-use form factor with USB-C and 40 pin DIP/SMT type, including up to 32 multi-function
+            GPIO pins (7 can be used as ADC inputs) and Serial Wire Debug (SWD) port. Available in Chip antenna
+            and U.FL receptacle options to support various wireless scenarios.
+        - icon: material/cable-data
+          title: Flexible power management
+          description: >-
+            Simple and flexible power management, supporting various options for easily powering
+            the unit from USB-C, external supplies or batteries. Depending on the wide input voltage
+            (1.8–5.5V), it automatically operates in boost or buck mode to output 3.3V.
+        - icon: material/link-box-variant
+          title: Built on open source
+          description: >-
+            Support Nordic Semi's nRF Connect SDK, integrating the Zephyr RTOS, protocol stacks, samples,
+            hardware drivers and much more. We also offer Python support, allowing you access hardware-specific
+            functionality and peripherals with Python programming language.
+        - icon: material/file-document-check
+          title: Well documented
+          description: >-
+            We offer an extensive set of documentation such as out of box experience, getting started and
+            developer guides, which can help you save big by reducing development effort. The documentation
+            is hosted as a GitHub repository that allows managing the updates over time.
+
+# Plugins
+plugins:
+  - search
+  # - git-revision-date-localized
+  - minify:
+      minify_html: true
+  # TODO: Support Chinese
+  # - i18n:
+  #    default_language: en
+  #    languages:
+  #      en: English
+  #      zh: 简体中文
+
+# Customization
+extra:
+  generator: false
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
+  social:
+    - icon: fontawesome/brands/shopify
+      link: https://makerdiary.com
+    - icon: fontawesome/brands/github
+      link: https://github.com/makerdiary
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/makerdiary
+    - icon: fontawesome/brands/discourse
+      link: https://community.makerdiary.com
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/channel/UCX4nJNlsyj9VJeQOHgOs0yg
+    - icon: fontawesome/solid/blog
+      link: https://blog.makerdiary.com
+    - icon: fontawesome/brands/medium
+      link: https://medium.com/makerdiary
+    - icon: fontawesome/solid/envelope
+      link: mailto:hi@makerdiary.com
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:materialx.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: makerdiary
+      repo: nrf52840-connectkit
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Page tree
+nav:
+  - Home: index.md
+  - Product:
+    - Introduction: introduction.md
+    - Hardware description: hardware.md
+    - Purchase: purchase.md
+    - Revision history: revision-history.md
+    - License: LICENSE.md
+  - Getting Started:
+    - Out of box experience: out-of-box-experience.md
+    - Programming:
+      - programming/index.md
+      - Using the UF2 Bootloader: programming/uf2boot.md
+      - Using DAPLink on nRF52840 Connect Kit: programming/daplink.md
+      - Using Pitaya-Link debug probe: programming/pitaya-link.md
+    - Resources: resources.md
+    - Contributing: CONTRIBUTING.md
+  - Developer Guides:
+    - nRF Connect SDK:
+      - guides/ncs/index.md
+      - Setting up the environment: guides/ncs/setup.md
+      - Building and running the first sample: guides/ncs/building.md
+      - Samples:
+        - Hello World: guides/ncs/samples/hello_world.md
+        - Blinky: guides/ncs/samples/blinky.md
+        - Button: guides/ncs/samples/button.md
+        - Voltage Measurement: guides/ncs/samples/voltage_measurement.md
+        - QSPI NOR Flash: guides/ncs/samples/qspi_flash.md
+        - USB Device:
+          - USB HID Mouse: guides/ncs/samples/usb/hid_mouse.md
+          - USB Mass Storage: guides/ncs/samples/usb/mass.md
+        - NFC:
+          - Launch App: guides/ncs/samples/nfc/launch_app.md
+          - Text record: guides/ncs/samples/nfc/text_record.md
+          - URI record: guides/ncs/samples/nfc/uri_record.md
+          - Writable NDEF message: guides/ncs/samples/nfc/writable_ndef_msg.md
+        - Bluetooth Low Energy:
+          - Beacon: guides/ncs/samples/ble/beacon.md
+          - Observer: guides/ncs/samples/ble/observer.md
+          - Peripheral: guides/ncs/samples/ble/peripheral.md
+          - Peripheral LBS: guides/ncs/samples/ble/peripheral_lbs.md
+          - Peripheral HIDS keyboard: guides/ncs/samples/ble/peripheral_hids_keyboard.md
+          - Peripheral HIDS mouse: guides/ncs/samples/ble/peripheral_hids_mouse.md
+          - NUS shell transport: guides/ncs/samples/ble/shell_bt_nus.md
+        - Thread:
+          - CLI: guides/ncs/samples/thread/cli.md
+          - CoAP: guides/ncs/samples/thread/coap.md
+          - Co-processor: guides/ncs/samples/thread/coprocessor.md
+        - Zigbee:
+          - Lighting: guides/ncs/samples/zigbee/lighting.md
+          - NCP: guides/ncs/samples/zigbee/ncp.md
+          - Shell: guides/ncs/samples/zigbee/shell.md
+    - Code in Python:
+      - guides/python/index.md
+      - Getting started with CircuitPython: guides/python/getting-started.md
+      - Samples:
+        - Blinky: guides/python/samples/blinky.md
+        - Button: guides/python/samples/button.md
+        - ADC: guides/python/samples/adc.md
+        - PWM: guides/python/samples/pwm.md
+        - USB Device:
+          - USB HID Keyboard: guides/python/samples/usb/hid_keyboard.md
+          - USB HID Mouse: guides/python/samples/usb/hid_mouse.md
+        - Bluetooth Low Energy:
+          - BLE Advertising: guides/python/samples/ble/advertising.md
+          - BLE Nordic UART Service: guides/python/samples/ble/nus.md
+          - BLE HID Keyboard: guides/python/samples/ble/hid_keyboard.md
+          - BLE HID Mouse: guides/python/samples/ble/hid_mouse.md
+      - Reference: guides/python/reference.md
+    - nRF Sniffer for Bluetooth LE:
+      - guides/ble-sniffer/index.md
+      - Installation: guides/ble-sniffer/installation.md
+      - Running the nRF Sniffer: guides/ble-sniffer/running-sniffer.md
+      - nRF Sniffer usage: guides/ble-sniffer/usage.md
+      - Common sniffing actions: guides/ble-sniffer/actions.md
+    - nRF Sniffer for 802.15.4:
+      - guides/nrf802154-sniffer/index.md
+      - Installation: guides/nrf802154-sniffer/installation.md
+      - Configuring Wireshark: guides/nrf802154-sniffer/configuring.md
+      - Capturing data with the nRF Sniffer: guides/nrf802154-sniffer/capturing.md
+      - Inspecting captured data: guides/nrf802154-sniffer/inspecting-data.md
+  - Discover:
+    - 2023:
+      - discover/2023/nrf52840-connectkit-is-here.md

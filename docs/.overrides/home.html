@@ -1,0 +1,488 @@
+<!--
+  Copyright (c) 2016-2022 Martin Donath <martin.donath@squidfunk.com>
+  Copyright (c) 2016-2022 Makerdiary
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+{% extends "main.html" %}
+
+<!-- Render hero under tabs -->
+{% block tabs %}
+  {{ super() }}
+
+  <!-- Additional styles for landing page -->
+  <style>
+
+    /* Application header should be static for the landing page */
+    .md-header {
+      position: initial;
+    }
+
+    /* Remove spacing, as we cannot hide it completely */
+    .md-main__inner {
+      margin: 0;
+    }
+
+    /* Hide main content for now */
+    .md-content {
+      display: none;
+    }
+
+    /* Hide table of contents */
+    @media screen and (min-width: 60em) {
+      .md-sidebar--secondary {
+        display: none;
+      }
+    }
+
+    /* Hide navigation */
+    @media screen and (min-width: 76.25em) {
+      .md-sidebar--primary {
+        display: none;
+      }
+    }
+
+    .color-background-2 {
+      background-color: var(--md-code-bg-color);
+    }
+    .md-content__inner {
+      margin-bottom: 0;
+      padding: 5.2rem 0;
+    }
+    .md-content__inner>:last-child {
+      margin-bottom: 0;
+    }
+    .md-typeset h2 {
+      font-weight: 700;
+      margin-top: 0.175em;
+    }
+
+    /* Hero section */
+    .mdx-container {
+      background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1123 258'><path d='M1124,2c0,0 0,256 0,256l-1125,0l0,-48c0,0 16,5 55,5c116,0 197,-92 325,-92c121,0 114,46 254,46c140,0 214,-167 572,-166Z' style='fill: hsla(0, 0%, 100%, 1)' /></svg>") no-repeat bottom, linear-gradient(to bottom, var(--md-primary-fg-color), var(--md-primary-fg-color--light) 99%, var(--md-default-bg-color) 99%);
+      padding-top: 1rem
+    }
+    [data-md-color-scheme=slate] .mdx-container {
+      background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1123 258'><path d='M1124,2c0,0 0,256 0,256l-1125,0l0,-48c0,0 16,5 55,5c116,0 197,-92 325,-92c121,0 114,46 254,46c140,0 214,-167 572,-166Z' style='fill: hsla(210,15%,21%,1)' /></svg>") no-repeat bottom, linear-gradient(to bottom, var(--md-primary-fg-color), var(--md-primary-fg-color--light) 99%, var(--md-default-bg-color) 99%)
+    }
+    .mdx-hero {
+      color: var(--md-primary-bg-color);
+      margin: 0 .8rem
+    }
+    .mdx-hero h1 {
+      color: currentcolor;
+      font-weight: 700;
+      margin-bottom: 1rem
+    }
+    @media screen and (max-width:29.9375em) {
+      .mdx-hero h1 {
+        font-size: 1.4rem
+      }
+    }
+    .mdx-hero__content {
+      padding-bottom: 6rem
+    }
+    @media screen and (min-width:60em) {
+      .mdx-hero {
+        align-items: stretch;
+        display: flex
+      }
+
+      .mdx-hero__content {
+        margin-top: 3.5rem;
+        max-width: 20rem;
+        padding-bottom: 14vw
+      }
+
+      .mdx-hero__image {
+        order: 1;
+        transform: translateX(4rem);
+        width: 38rem
+      }
+    }
+    @media screen and (min-width:76.25em) {
+      .mdx-hero__image {
+        transform: translateX(8rem)
+      }
+    }
+    .mdx-hero .md-button {
+      border: .05rem solid;
+      border-radius: 0;
+      box-shadow: 0 0 0 .05rem var(--md-primary-bg-colo);
+      color: var(--md-primary-bg-color);
+      margin-right: .5rem;
+      margin-top: .5rem;
+      transition: box-shadow .1s ease
+    }
+    .mdx-hero .md-button:focus,
+    .mdx-hero .md-button:hover {
+      background-color: initial;
+      border-color: var(--md-primary-bg-color);
+      box-shadow: 0 0 0 .05rem var(--md-primary-bg-color)
+    }
+    .mdx-hero .md-button--primary,
+    .mdx-hero .md-button--primary:focus,
+    .mdx-hero .md-button--primary:hover {
+      background-color: var(--md-primary-bg-color);
+      border-color: var(--md-primary-bg-color);
+      color: var(--md-primary-fg-color--light)
+    }
+    .mdx-hero .md-button--primary:focus,
+    .mdx-hero .md-button--primary:hover {
+      box-shadow: 0 0 0 .05rem var(--md-primary-bg-color)
+    }
+
+    /* Multicolumn section */
+    .mdx-multicolumn {
+      margin: 2.4rem 0;
+    }
+    .mdx-multicolumn__columns {
+      display: flex;
+      flex-flow: row wrap;
+      gap: 1.6rem;
+      padding: 0;
+    }
+    .mdx-multicolumn__item:first-child {
+      transition-delay: .2s;
+    }
+    .mdx-multicolumn__item {
+      display: flex;
+      flex: 1 0 48%;
+      gap: 0.6rem;
+      margin: 0;
+      transition: transform .75s cubic-bezier(.075,.85,.175,1),opacity .75s;
+    }
+    .mdx-multicolumn__icon {
+      fill: currentcolor;
+      background-color: var(--md-default-fg-color--lightest);
+      border-radius: 100%;
+      flex-shrink: 0;
+      height: 2.2rem;
+      padding: 0.4rem;
+      width: 2.2rem;
+    }
+    .mdx-multicolumn__description>:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Image with text section */
+    .mdx-image-with-text {
+      margin: 2em 0;
+    }
+    @media screen and (min-width: 60em) {
+      .mdx-image-with-text__feature:nth-child(odd) {
+        flex-direction: row-reverse;
+      }
+    }
+    @media screen and (max-width: 59.9375em) {
+      .mdx-image-with-text__feature {
+        flex-direction: column;
+        gap: 0;
+      }
+      .mdx-image-with-text__feature>a {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    .mdx-image-with-text__feature {
+      display: flex;
+      flex: 1 0 48%;
+      flex-flow: row nowrap;
+      gap: 3.2rem;
+      margin: 0 0 3.2rem;
+    }
+    .mdx-image-with-text__feature figcaption {
+      margin-top: 0.8rem;
+    }
+    .mdx-image-with-text__feature>a:hover {
+      transform: scale(1.025);
+    }
+    .mdx-image-with-text__feature>a {
+      display: block;
+      flex-shrink: 0;
+      transition: transform .5s cubic-bezier(.075,.85,.175,1);
+    }
+    .mdx-image-with-text__feature a>img, .mdx-image-with-text__feature figcaption {
+      transition: transform .75s cubic-bezier(.075,.85,.175,1) 125ms,opacity .75s 125ms;
+    }
+    .mdx-image-with-text__feature a>img {
+      border-radius: 0.2rem;
+      box-shadow: var(--md-shadow-z2);
+      display: block;
+      height: auto;
+      max-width: 100%;
+      width: 25rem;
+    }
+
+    /* Image banner section */
+    .mdx-image-banner__image {
+      display: block;
+      height: 100%;
+      object-fit: cover;
+      object-position: var(--md-image-position,50%);
+      position: absolute;
+      width: 100%;
+      z-index: -1;
+    }
+    .mdx-image-banner__description {
+      display: block;
+      max-width: 40rem;
+      transition: transform .75s cubic-bezier(.075,.85,.175,1) 125ms,opacity .75s 125ms;
+    }
+    .mdx-image-banner {
+      background-color: var(--md-default-bg-color);
+      color: var(--md-typeset-color);
+      display: block;
+      position: relative;
+      transform-style: preserve-3d;
+    }
+
+    /* Featured blog section */
+    .mdx-featured-blog {
+      display: flex;
+      gap: 3.2rem;
+      margin: 2.4rem 0;
+    }
+    @media screen and (max-width: 59.9375em) {
+      .mdx-featured-blog {
+        flex-direction: column;
+      }
+    }
+    .mdx-featured-blog__article:first-child {
+      transition-delay: .2s;
+    }
+    .mdx-featured-blog__article {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      margin: 0;
+    }
+    .mdx-featured-blog__article figcaption, .mdx-featured-blog__article img {
+      transition: transform .75s cubic-bezier(.075,.85,.175,1),opacity .75s;
+      transition-delay: inherit;
+    }
+    .mdx-featured-blog__article img {
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+    }
+    .mdx-featured-blog__article img:hover {
+      transform: scale(1.025);
+    }
+    .mdx-featured-blog__article_title a {
+      color: var(--md-typeset-color);
+    }
+    .mdx-featured-blog__viewall {
+      text-align: center;
+    }
+
+  </style>
+
+  <!-- Hero for landing page -->
+  <section class="mdx-container">
+    <div class="md-grid md-typeset">
+      <div class="mdx-hero">
+        <div class="mdx-hero__image">
+          <img src="{{ config.theme.home.hero.image }}" alt="" draggable="false">
+        </div>
+        <div class="mdx-hero__content">
+          <h1>{{ config.theme.home.hero.title }}</h1>
+          <p>{{ config.theme.home.hero.description }}</p>
+          <a
+            href="{{ config.theme.home.hero.button_primary.link | url }}"
+            title="{{ config.theme.home.hero.button_primary.label | e }}"
+            class="md-button md-button--primary"
+          >
+            {{ config.theme.home.hero.button_primary.label }}
+          </a>
+          <a
+            href="{{ config.theme.home.hero.button_secondary.link | url }}"
+            title="{{ config.theme.home.hero.button_secondary.label | e }}"
+            class="md-button"
+          >
+            {{ config.theme.home.hero.button_secondary.label }}
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Multicolumn -->
+  {% if config.theme.home.multicolumn %}
+    <section class="md-container">
+      <div class="md-grid">
+        <div class="md-content__inner">
+          {% if config.theme.home.multicolumn.heading %}
+            <header class="md-typeset">
+              <h1 id="{{ config.theme.home.multicolumn.id }}">{{ config.theme.home.multicolumn.heading }}<a href="#{{ config.theme.home.multicolumn.id }}" class="headerlink" title="Permanent link"> ¶ </a> </h1>
+            </header>
+          {% endif %}
+          {% if config.theme.home.multicolumn.columns %}
+            <div class="mdx-multicolumn">
+              <ul class="mdx-multicolumn__columns">
+                {% for column in config.theme.home.multicolumn.columns %}
+                  <li class="mdx-multicolumn__item md-typeset">
+                    <div class="mdx-multicolumn__icon">
+                      {% include ".icons/" ~ column.icon ~ ".svg" %}
+                    </div>
+                    <div class="mdx-multicolumn__description">
+                      <h2>{{ column.title }}</h2>
+                      <p>{{ column.description }}</p>
+                    </div>
+                  </li>
+                {% endfor%}
+              </ul>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </section>
+  {% endif %}
+
+  <!-- Image with text -->
+  {% if config.theme.home.image_with_text %}
+    <section class="md-container color-background-2">
+      <div class="md-grid">
+        <div class="md-content__inner">
+          {% if config.theme.home.image_with_text.heading %}
+            <header class="md-typeset">
+              <h1 id="{{ config.theme.home.image_with_text.id }}">{{ config.theme.home.image_with_text.heading }}<a href="#{{ config.theme.home.image_with_text.id }}" class="headerlink" title="Permanent link"> ¶ </a> </h1>
+            </header>
+          {% endif %}
+          {% if config.theme.home.image_with_text.blocks %}
+            <div class="mdx-image-with-text">
+              {% for block in config.theme.home.image_with_text.blocks %}
+                <figure class="mdx-image-with-text__feature">
+                  <a
+                    href="{{ block.link | url }}"
+                    title="{{ block.title | e }}"
+                    tabindex="-1"
+                  >
+                    <img src="{{ block.image | url }}" alt="{{ block.title | e }}" loading="lazy">
+                  </a>
+                  <figcaption class="md-typeset">
+                    <h2>{{ block.title | e }}</h2>
+                    {{ block.description }}
+                    {% if block.button %}
+                      <p>
+                        <a
+                          href="{{ block.link | url }}"
+                          aria-label="{{ block.button | e }}"
+                          class="md-button md-button--primary"
+                        >
+                          {{ block.button }}
+                          <span class="twemoji">{% include ".icons/octicons/arrow-right-24.svg" %}</span>
+                        </a>
+                      </p>
+                    {% endif %}
+                  </figcaption>
+                </figure>
+              {% endfor %}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </section>
+  {% endif %}
+
+  <!-- Image banner -->
+  {% if config.theme.home.image_banner %}
+    <section class="md-container">
+      <section class="mdx-image-banner" data-md-color-scheme="{{ config.theme.home.image_banner.scheme }}">
+        <img src="{{ config.theme.home.image_banner.image | url }}" alt="{{ config.theme.home.image_banner.heading }}" class="mdx-image-banner__image">
+        <div class="md-grid">
+          <div class="md-content__inner">
+            <header class="md-typeset">
+              <h1 id="{{ config.theme.home.image_banner.id }}">{{ config.theme.home.image_banner.heading }}<a href="#{{ config.theme.home.image_banner.id }}" class="headerlink" title="Permanent link"> ¶ </a></h1>
+            </header>
+            <div class="mdx-image-banner__description md-typeset">
+              <p>{{ config.theme.home.image_banner.description }}</p>
+              <p>
+                <a href="{{ config.theme.home.image_banner.button.link }}" class="md-button md-button--primary">{{ config.theme.home.image_banner.button.label }}</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  {% endif %}
+
+  <!-- Featured blog -->
+  {% if config.theme.home.featured_blog %}
+    <section class="md-container">
+      <div class="md-grid">
+        <div class="md-content__inner">
+          {% if config.theme.home.featured_blog.heading %}
+            <header class="md-typeset">
+              <h1 id="{{ config.theme.home.featured_blog.id }}"> {{ config.theme.home.featured_blog.heading }} <a href="#{{ config.theme.home.featured_blog.id }}" class="headerlink" title="Permanent link"> ¶ </a></h1>
+            </header>
+          {% endif %}
+          {% if config.theme.home.featured_blog.articles %}
+            <div class="mdx-featured-blog">
+              {% for article in config.theme.home.featured_blog.articles %}
+                <figure class="mdx-featured-blog__article">
+                  <a
+                    href="{{ article.link | url }}"
+                    title="{{ article.title | e }}"
+                    tabindex="-1"
+                  >
+                    <img src="{{ article.image | url }}" alt="{{ article.title | e }}" loading="lazy">
+                  </a>
+                  <figcaption class="md-typeset">
+                    <h3 class="mdx-featured-blog__article_title">
+                      <a href="{{ article.link | url }}">{{ article.title }}</a>
+                    </h3>
+                    <small>
+                      <span class="twemoji">{% include ".icons/octicons/calendar-24.svg" %}</span>
+                      {{ article.date }} · 
+                      <span class="twemoji">{% include ".icons/octicons/clock-24.svg" %}</span> 
+                      {{ article.reading_time }} read
+                    </small>
+                    <p>{{ article.excerpt }}</p>
+                    <p>
+                      <a href="{{ article.link | url }}">
+                        <span class="twemoji">
+                          {% include ".icons/octicons/arrow-right-24.svg" %}
+                        </span> Continue reading
+                      </a>
+                    </p>
+                  </figcaption>
+                </figure>
+              {% endfor %}
+            </div>
+          {% endif %}
+          <div class="md-typeset mdx-featured-blog__viewall">
+            <a href="{{ config.theme.home.featured_blog.catalog | url }}" class="md-button md-button--primary"> View all </a>
+          </div>
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+{% endblock %}
+
+<!-- Content -->
+{% block content %}{% endblock %}
+
+<!-- Application footer -->
+{% block footer %}
+{{ super() }}
+{% endblock %}
