@@ -35,52 +35,13 @@
       position: initial;
     }
 
-    /* Remove spacing, as we cannot hide it completely */
-    .md-main__inner {
-      margin: 0;
-    }
-
-    /* Hide main content for now */
-    .md-content {
-      display: none;
-    }
-
-    /* Hide table of contents */
-    @media screen and (min-width: 60em) {
-      .md-sidebar--secondary {
-        display: none;
-      }
-    }
-
-    /* Hide navigation */
-    @media screen and (min-width: 76.25em) {
-      .md-sidebar--primary {
-        display: none;
-      }
-    }
-
-    .color-background-2 {
-      background-color: var(--md-code-bg-color);
-    }
-    .md-content__inner {
-      margin-bottom: 0;
-      padding: 5.2rem 0;
-    }
-    .md-content__inner>:last-child {
-      margin-bottom: 0;
-    }
-    .md-typeset h2 {
-      font-weight: 700;
-      margin-top: 0.175em;
-    }
-
     /* Hero section */
     .mdx-container {
-      background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1123 258'><path d='M1124,2c0,0 0,256 0,256l-1125,0l0,-48c0,0 16,5 55,5c116,0 197,-92 325,-92c121,0 114,46 254,46c140,0 214,-167 572,-166Z' style='fill: hsla(0, 0%, 100%, 1)' /></svg>") no-repeat bottom, linear-gradient(to bottom, var(--md-primary-fg-color), var(--md-primary-fg-color--light) 99%, var(--md-default-bg-color) 99%);
-      padding-top: 1rem
+      background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 110'><path d='M0,90v20H1200V0C821.352,179.7,377.23-99.94,0,90Z' style='fill:hsla(0, 0%, 100%, 1)'/></svg>") no-repeat bottom, linear-gradient(to bottom, var(--md-primary-fg-color), var(--md-primary-fg-color--light) 99%, var(--md-default-bg-color) 99%);
+      /*padding-top: 1rem*/
     }
     [data-md-color-scheme=slate] .mdx-container {
-      background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1123 258'><path d='M1124,2c0,0 0,256 0,256l-1125,0l0,-48c0,0 16,5 55,5c116,0 197,-92 325,-92c121,0 114,46 254,46c140,0 214,-167 572,-166Z' style='fill: hsla(210,15%,21%,1)' /></svg>") no-repeat bottom, linear-gradient(to bottom, var(--md-primary-fg-color), var(--md-primary-fg-color--light) 99%, var(--md-default-bg-color) 99%)
+      background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 110'><path d='M0,90v20H1200V0C821.352,179.7,377.23-99.94,0,90Z' style='fill: hsla(210,15%,21%,1)' /></svg>") no-repeat bottom, linear-gradient(to bottom, var(--md-primary-fg-color), var(--md-primary-fg-color--light) 99%, var(--md-default-bg-color) 99%)
     }
     .mdx-hero {
       color: var(--md-primary-bg-color);
@@ -107,14 +68,14 @@
 
       .mdx-hero__content {
         margin-top: 3.5rem;
-        max-width: 20rem;
+        max-width: 22rem;
         padding-bottom: 14vw
       }
 
       .mdx-hero__image {
         order: 1;
         transform: translateX(4rem);
-        width: 38rem
+        width: 32rem
       }
     }
     @media screen and (min-width:76.25em) {
@@ -149,151 +110,6 @@
       box-shadow: 0 0 0 .05rem var(--md-primary-bg-color)
     }
 
-    /* Multicolumn section */
-    .mdx-multicolumn {
-      margin: 2.4rem 0;
-    }
-    .mdx-multicolumn__columns {
-      display: flex;
-      flex-flow: row wrap;
-      gap: 1.6rem;
-      padding: 0;
-    }
-    .mdx-multicolumn__item:first-child {
-      transition-delay: .2s;
-    }
-    .mdx-multicolumn__item {
-      display: flex;
-      flex: 1 0 48%;
-      gap: 0.6rem;
-      margin: 0;
-      transition: transform .75s cubic-bezier(.075,.85,.175,1),opacity .75s;
-    }
-    .mdx-multicolumn__icon {
-      fill: currentcolor;
-      background-color: var(--md-default-fg-color--lightest);
-      border-radius: 100%;
-      flex-shrink: 0;
-      height: 2.2rem;
-      padding: 0.4rem;
-      width: 2.2rem;
-    }
-    .mdx-multicolumn__description>:last-child {
-      margin-bottom: 0;
-    }
-
-    /* Image with text section */
-    .mdx-image-with-text {
-      margin: 2em 0;
-    }
-    @media screen and (min-width: 60em) {
-      .mdx-image-with-text__feature:nth-child(odd) {
-        flex-direction: row-reverse;
-      }
-    }
-    @media screen and (max-width: 59.9375em) {
-      .mdx-image-with-text__feature {
-        flex-direction: column;
-        gap: 0;
-      }
-      .mdx-image-with-text__feature>a {
-        margin-left: auto;
-        margin-right: auto;
-      }
-    }
-    .mdx-image-with-text__feature {
-      display: flex;
-      flex: 1 0 48%;
-      flex-flow: row nowrap;
-      gap: 3.2rem;
-      margin: 0 0 3.2rem;
-    }
-    .mdx-image-with-text__feature figcaption {
-      margin-top: 0.8rem;
-    }
-    .mdx-image-with-text__feature>a:hover {
-      transform: scale(1.025);
-    }
-    .mdx-image-with-text__feature>a {
-      display: block;
-      flex-shrink: 0;
-      transition: transform .5s cubic-bezier(.075,.85,.175,1);
-    }
-    .mdx-image-with-text__feature a>img, .mdx-image-with-text__feature figcaption {
-      transition: transform .75s cubic-bezier(.075,.85,.175,1) 125ms,opacity .75s 125ms;
-    }
-    .mdx-image-with-text__feature a>img {
-      border-radius: 0.2rem;
-      box-shadow: var(--md-shadow-z2);
-      display: block;
-      height: auto;
-      max-width: 100%;
-      width: 25rem;
-    }
-
-    /* Image banner section */
-    .mdx-image-banner__image {
-      display: block;
-      height: 100%;
-      object-fit: cover;
-      object-position: var(--md-image-position,50%);
-      position: absolute;
-      width: 100%;
-      z-index: -1;
-    }
-    .mdx-image-banner__description {
-      display: block;
-      max-width: 40rem;
-      transition: transform .75s cubic-bezier(.075,.85,.175,1) 125ms,opacity .75s 125ms;
-    }
-    .mdx-image-banner {
-      background-color: var(--md-default-bg-color);
-      color: var(--md-typeset-color);
-      display: block;
-      position: relative;
-      transform-style: preserve-3d;
-    }
-
-    /* Featured blog section */
-    .mdx-featured-blog {
-      display: flex;
-      gap: 3.2rem;
-      margin: 2.4rem 0;
-    }
-    @media screen and (max-width: 59.9375em) {
-      .mdx-featured-blog {
-        flex-direction: column;
-      }
-    }
-    .mdx-featured-blog__article:first-child {
-      transition-delay: .2s;
-    }
-    .mdx-featured-blog__article {
-      display: flex;
-      flex: 1;
-      flex-direction: column;
-      margin: 0;
-    }
-    .mdx-featured-blog__article figcaption, .mdx-featured-blog__article img {
-      transition: transform .75s cubic-bezier(.075,.85,.175,1),opacity .75s;
-      transition-delay: inherit;
-    }
-    .mdx-featured-blog__article img {
-      height: auto;
-      margin-left: auto;
-      margin-right: auto;
-      width: 100%;
-    }
-    .mdx-featured-blog__article img:hover {
-      transform: scale(1.025);
-    }
-    .mdx-featured-blog__article_title a {
-      color: var(--md-typeset-color);
-    }
-    .mdx-featured-blog__viewall {
-      text-align: center;
-    }
-
   </style>
 
   <!-- Hero for landing page -->
@@ -325,162 +141,134 @@
     </div>
   </section>
 
-  <!-- Multicolumn -->
-  {% if config.theme.home.multicolumn %}
-    <section class="md-container">
-      <div class="md-grid">
-        <div class="md-content__inner">
-          {% if config.theme.home.multicolumn.heading %}
-            <header class="md-typeset">
-              <h1 id="{{ config.theme.home.multicolumn.id }}">{{ config.theme.home.multicolumn.heading }}<a href="#{{ config.theme.home.multicolumn.id }}" class="headerlink" title="Permanent link"> ¶ </a> </h1>
-            </header>
-          {% endif %}
-          {% if config.theme.home.multicolumn.columns %}
-            <div class="mdx-multicolumn">
-              <ul class="mdx-multicolumn__columns">
-                {% for column in config.theme.home.multicolumn.columns %}
-                  <li class="mdx-multicolumn__item md-typeset">
-                    <div class="mdx-multicolumn__icon">
-                      {% include ".icons/" ~ column.icon ~ ".svg" %}
-                    </div>
-                    <div class="mdx-multicolumn__description">
-                      <h2>{{ column.title }}</h2>
-                      <p>{{ column.description }}</p>
-                    </div>
-                  </li>
-                {% endfor%}
-              </ul>
-            </div>
-          {% endif %}
-        </div>
-      </div>
-    </section>
-  {% endif %}
-
-  <!-- Image with text -->
-  {% if config.theme.home.image_with_text %}
-    <section class="md-container color-background-2">
-      <div class="md-grid">
-        <div class="md-content__inner">
-          {% if config.theme.home.image_with_text.heading %}
-            <header class="md-typeset">
-              <h1 id="{{ config.theme.home.image_with_text.id }}">{{ config.theme.home.image_with_text.heading }}<a href="#{{ config.theme.home.image_with_text.id }}" class="headerlink" title="Permanent link"> ¶ </a> </h1>
-            </header>
-          {% endif %}
-          {% if config.theme.home.image_with_text.blocks %}
-            <div class="mdx-image-with-text">
-              {% for block in config.theme.home.image_with_text.blocks %}
-                <figure class="mdx-image-with-text__feature">
-                  <a
-                    href="{{ block.link | url }}"
-                    title="{{ block.title | e }}"
-                    tabindex="-1"
-                  >
-                    <img src="{{ block.image | url }}" alt="{{ block.title | e }}" loading="lazy">
-                  </a>
-                  <figcaption class="md-typeset">
-                    <h2>{{ block.title | e }}</h2>
-                    {{ block.description }}
-                    {% if block.button %}
-                      <p>
-                        <a
-                          href="{{ block.link | url }}"
-                          aria-label="{{ block.button | e }}"
-                          class="md-button md-button--primary"
-                        >
-                          {{ block.button }}
-                          <span class="twemoji">{% include ".icons/octicons/arrow-right-24.svg" %}</span>
-                        </a>
-                      </p>
-                    {% endif %}
-                  </figcaption>
-                </figure>
-              {% endfor %}
-            </div>
-          {% endif %}
-        </div>
-      </div>
-    </section>
-  {% endif %}
-
-  <!-- Image banner -->
-  {% if config.theme.home.image_banner %}
-    <section class="md-container">
-      <section class="mdx-image-banner" data-md-color-scheme="{{ config.theme.home.image_banner.scheme }}">
-        <img src="{{ config.theme.home.image_banner.image | url }}" alt="{{ config.theme.home.image_banner.heading }}" class="mdx-image-banner__image">
-        <div class="md-grid">
-          <div class="md-content__inner">
-            <header class="md-typeset">
-              <h1 id="{{ config.theme.home.image_banner.id }}">{{ config.theme.home.image_banner.heading }}<a href="#{{ config.theme.home.image_banner.id }}" class="headerlink" title="Permanent link"> ¶ </a></h1>
-            </header>
-            <div class="mdx-image-banner__description md-typeset">
-              <p>{{ config.theme.home.image_banner.description }}</p>
-              <p>
-                <a href="{{ config.theme.home.image_banner.button.link }}" class="md-button md-button--primary">{{ config.theme.home.image_banner.button.label }}</a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </section>
-  {% endif %}
-
-  <!-- Featured blog -->
-  {% if config.theme.home.featured_blog %}
-    <section class="md-container">
-      <div class="md-grid">
-        <div class="md-content__inner">
-          {% if config.theme.home.featured_blog.heading %}
-            <header class="md-typeset">
-              <h1 id="{{ config.theme.home.featured_blog.id }}"> {{ config.theme.home.featured_blog.heading }} <a href="#{{ config.theme.home.featured_blog.id }}" class="headerlink" title="Permanent link"> ¶ </a></h1>
-            </header>
-          {% endif %}
-          {% if config.theme.home.featured_blog.articles %}
-            <div class="mdx-featured-blog">
-              {% for article in config.theme.home.featured_blog.articles %}
-                <figure class="mdx-featured-blog__article">
-                  <a
-                    href="{{ article.link | url }}"
-                    title="{{ article.title | e }}"
-                    tabindex="-1"
-                  >
-                    <img src="{{ article.image | url }}" alt="{{ article.title | e }}" loading="lazy">
-                  </a>
-                  <figcaption class="md-typeset">
-                    <h3 class="mdx-featured-blog__article_title">
-                      <a href="{{ article.link | url }}">{{ article.title }}</a>
-                    </h3>
-                    <small>
-                      <span class="twemoji">{% include ".icons/octicons/calendar-24.svg" %}</span>
-                      {{ article.date }} · 
-                      <span class="twemoji">{% include ".icons/octicons/clock-24.svg" %}</span> 
-                      {{ article.reading_time }} read
-                    </small>
-                    <p>{{ article.excerpt }}</p>
-                    <p>
-                      <a href="{{ article.link | url }}">
-                        <span class="twemoji">
-                          {% include ".icons/octicons/arrow-right-24.svg" %}
-                        </span> Continue reading
-                      </a>
-                    </p>
-                  </figcaption>
-                </figure>
-              {% endfor %}
-            </div>
-          {% endif %}
-          <div class="md-typeset mdx-featured-blog__viewall">
-            <a href="{{ config.theme.home.featured_blog.catalog | url }}" class="md-button md-button--primary"> View all </a>
-          </div>
-      </div>
-    </div>
-  </section>
-  {% endif %}
-
 {% endblock %}
 
 <!-- Content -->
-{% block content %}{% endblock %}
+{% block content %}
+  <style>
+    .md-typeset .mdx-multicolumn {
+      grid-gap: 1.4rem 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(19rem,1fr));
+      margin-bottom: 2.2rem;
+    }
+    .md-typeset .mdx-multicolumn>ul {
+      display: contents;
+    }
+    .md-typeset .mdx-multicolumn>ul>li {
+      display: flex;
+      gap: 0.6rem;
+      margin: 0;
+      transition: transform .75s cubic-bezier(.075,.85,.175,1),opacity .75s;
+      margin-left: 0;
+    }
+    .mdx-multicolumn__icon {
+      fill: var(--md-primary-fg-color);
+      background-color: var(--md-default-fg-color--lightest);
+      border-radius: 100%;
+      flex-shrink: 0;
+      height: 2.2rem;
+      padding: 0.4rem;
+      width: 2.2rem;
+    }
+    .md-typeset .mdx-multicolumn>ul>li .mdx-multicolumn__title {
+      font-weight: 700;
+      margin-top: 0.175em;
+    }
+    .mdx-featured-blog__viewall {
+      margin-top: 1.5rem;
+      text-align: center;
+    }
+    .md-typeset .grid {
+      grid-gap: 1.6rem 1.4rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(16rem,1fr));
+      margin: 1em 0
+    }
+    .md-typeset .grid.cards>ol,.md-typeset .grid.cards>ul {
+      display: contents
+    }
+    .md-typeset .grid.cards h3 {
+        margin: 0.5rem 0;
+        font-size: 0.9rem;
+    }
+    .article_link:hover .twemoji {
+      transform: translateX(0.2rem);
+    }
+    .md-typeset .grid.cards>ol>li,.md-typeset .grid.cards>ul>li,.md-typeset .grid>.card {
+      border: .05rem solid var(--md-default-fg-color--lightest);
+      border-radius: .1rem;
+      display: block;
+      margin: 0;
+      padding: .8rem;
+      transition: border .25s,box-shadow .25s
+    }
+    .md-typeset .grid.cards>ol>li:focus-within,.md-typeset .grid.cards>ol>li:hover,.md-typeset .grid.cards>ul>li:focus-within,.md-typeset .grid.cards>ul>li:hover,.md-typeset .grid>.card:focus-within,.md-typeset .grid>.card:hover {
+      border-color: #0000;
+      box-shadow: var(--md-shadow-z2)
+    }
+  </style>
+
+  <!-- Multicolumn -->
+  {% if config.theme.home.multicolumn %}
+    {% if config.theme.home.multicolumn.heading %}
+      <h1 id="{{ config.theme.home.multicolumn.id }}">{{ config.theme.home.multicolumn.heading }}<a href="#{{ config.theme.home.multicolumn.id }}" class="headerlink" title="Permanent link"> ¶ </a> </h1>
+    {% endif %}
+    {% if config.theme.home.multicolumn.columns %}
+      <div class="mdx-multicolumn">
+        <ul>
+          {% for column in config.theme.home.multicolumn.columns %}
+            <li>
+              <div class="mdx-multicolumn__icon">
+                {% include ".icons/" ~ column.icon ~ ".svg" %}
+              </div>
+              <div class="mdx-multicolumn__description">
+                <h2 class="mdx-multicolumn__title">{{ column.title }}</h2>
+                <p>{{ column.description }}</p>
+              </div>
+            </li>
+          {% endfor%}
+        </ul>
+      </div>
+    {% endif %}
+  {% endif %}
+
+  {% if config.theme.blog %}
+    <h1 id="#latest-posts">Latest posts<a class="headerlink" href="#latest-posts" title="Permanent link">¶</a></h1>
+    {% if config.theme.blog.articles %}
+      <div class="grid cards">
+        <ul>
+          {% for article in config.theme.blog.articles %}
+            {% if loop.index < 4 %}
+              <li>
+                <img src="{{ article.cover | url }}" alt="{{ article.title | e }}" loading="lazy">
+                <h3>{{ article.title }}</h3>
+                <small>
+                  <span class="twemoji">{% include ".icons/octicons/calendar-24.svg" %}</span>
+                  {{ article.date }} · 
+                  <span class="twemoji">{% include ".icons/octicons/clock-24.svg" %}</span> 
+                  {{ article.reading_time }} read
+                </small>
+                <p>{{ article.excerpt }}</p>
+                <p>
+                  <a class="article_link" href="{{ article.link | url }}">
+                    Continue reading
+                    <span class="twemoji">
+                      {% include ".icons/octicons/arrow-right-24.svg" %}
+                    </span>
+                  </a>
+                </p>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="md-typeset mdx-featured-blog__viewall">
+        <a href="{{ config.theme.blog.catalog | url }}" class="md-button md-button--primary"> View all </a>
+      </div>
+    {% endif %}
+  {% endif %}
+{% endblock %}
 
 <!-- Application footer -->
 {% block footer %}

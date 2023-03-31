@@ -1,4 +1,4 @@
-# nRF52840 Connect Kit<br/><small>Connected Prototyping Kit featuring the nRF52840 SoC</small>
+# nRF52840 Connect Kit<br/><small>Rapid prototyping kit for your next connected projects</small>
 
 ## Description
 

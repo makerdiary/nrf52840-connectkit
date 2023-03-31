@@ -292,10 +292,10 @@ To clone the repositories, complete the following steps:
     ```
 
     !!! Tip
-        You can initialize west with the revision of [connect-micro-project] that you want to check out. For example, to check out the `v1.0.0` release, enter the following command:
+        You can initialize west with the revision of [connect-micro-project] that you want to check out. For example, to check out the `v0.1.0-rc1` release, enter the following command:
 
         ``` bash linenums="1"
-        west init -m https://github.com/makerdiary/connect-micro-project --mr v1.0.0 my-workspace
+        west init -m https://github.com/makerdiary/connect-micro-project --mr v0.1.0-rc1 my-workspace
         ```
 
 2. Enter the following commands to clone the project repositories:
