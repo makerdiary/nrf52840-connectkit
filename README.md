@@ -3,7 +3,7 @@
 [![Documentation](https://github.com/makerdiary/nrf52840-connectkit/actions/workflows/documentation.yml/badge.svg?branch=main)](https://wiki.makerdiary.com/nrf52840-connectkit)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?color=informational)](/.github/CONTRIBUTING.md)
 
-> Connected Prototyping Kit featuring the nRF52840 SoC
+> Rapid prototyping kit for your next connected projects
 
 ## Introduction
 
