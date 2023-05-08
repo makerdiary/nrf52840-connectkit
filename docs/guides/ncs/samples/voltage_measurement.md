@@ -36,10 +36,10 @@ Use the following steps to build the [Voltage Measurement] sample on the command
 
 1. Open a terminal window.
 
-2. Go to `my-workspace/connect-micro-project` directory created in the [Setting up the environment](../setup.md#get-the-code) section.
+2. Go to `my-workspace/ncs-playground` directory created in the [Setting up the environment](../setup.md#get-the-code) section.
 
     ``` bash linenums="1"
-    cd my-workspace/connect-micro-project
+    cd my-workspace/ncs-playground
     ```
 
 3. Build the sample using the `west` command, specifying the board (following the `-b` option) as `connectkit_nrf52840`:
@@ -101,5 +101,5 @@ After flashing the firmware to your board, complete the following steps to test 
     ...
     ```
 
-[Voltage Measurement]: https://github.com/makerdiary/connect-micro-project/tree/main/samples/voltage_measurement
+[Voltage Measurement]: https://github.com/makerdiary/ncs-playground/tree/main/samples/voltage_measurement
 [PuTTY]: https://apps.microsoft.com/store/detail/putty/XPFNZKSKLBP7RJ

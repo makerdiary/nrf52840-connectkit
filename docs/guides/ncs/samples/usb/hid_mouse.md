@@ -20,10 +20,10 @@ Use the following steps to build the [USB HID Mouse] sample on the command line.
 
 1. Open a terminal window.
 
-2. Go to `my-workspace/connect-micro-project` directory created in the [Setting up the environment](../../setup.md#get-the-code) section.
+2. Go to `my-workspace/ncs-playground` directory created in the [Setting up the environment](../../setup.md#get-the-code) section.
 
     ``` bash linenums="1"
-    cd my-workspace/connect-micro-project
+    cd my-workspace/ncs-playground
     ```
 
 3. Build the sample using the `west` command, specifying the board (following the `-b` option) as `connectkit_nrf52840`:
@@ -60,4 +60,4 @@ After flashing the firmware to your board, complete the following steps to test 
 3. Press __USER__ button on the board. Observe that a left mouse click is activated.
 
 
-[USB HID Mouse]: https://github.com/makerdiary/connect-micro-project/tree/main/samples/usb/hid-mouse
+[USB HID Mouse]: https://github.com/makerdiary/ncs-playground/tree/main/samples/usb/hid-mouse

@@ -28,10 +28,10 @@ Use the following steps to build the samples on the command line.
 
 1. Open a terminal window.
 
-2. Go to `my-workspace/connect-micro-project` directory created in the [Setting up the environment](../../setup.md#get-the-code) section.
+2. Go to `my-workspace/ncs-playground` directory created in the [Setting up the environment](../../setup.md#get-the-code) section.
 
     ``` bash linenums="1"
-    cd my-workspace/connect-micro-project
+    cd my-workspace/ncs-playground
     ```
 
 3. Build each sample using the `west` command, specifying the board (following the `-b` option) as `connectkit_nrf52840`:
@@ -108,8 +108,8 @@ After flashing the Network coordinator, Light bulb and Light switch, complete th
     2. Tap the <kbd>t</kbd> command button to toggle the LED on the Zigbee Light bulb node on and off.
     3. Tap the <kbd>i</kbd> and <kbd>d</kbd> command buttons to make adjustments to the brightness level.
 
-[Zigbee Network coordinator]: https://github.com/makerdiary/connect-micro-project/tree/main/samples/zigbee/network_coordinator
-[Zigbee Light switch]: https://github.com/makerdiary/connect-micro-project/tree/main/samples/zigbee/light_switch
-[Zigbee Light bulb]: https://github.com/makerdiary/connect-micro-project/tree/main/samples/zigbee/light_bulb
+[Zigbee Network coordinator]: https://github.com/makerdiary/ncs-playground/tree/main/samples/zigbee/network_coordinator
+[Zigbee Light switch]: https://github.com/makerdiary/ncs-playground/tree/main/samples/zigbee/light_switch
+[Zigbee Light bulb]: https://github.com/makerdiary/ncs-playground/tree/main/samples/zigbee/light_bulb
 [nRF Toolbox]: https://www.nordicsemi.com/Software-and-Tools/Development-Tools/nRF-Toolbox
 [Nordic UART Service (NUS)]: https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/nrf/libraries/bluetooth_services/services/nus.html#nus-service-readme

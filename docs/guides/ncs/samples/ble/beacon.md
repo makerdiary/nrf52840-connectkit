@@ -26,10 +26,10 @@ Use the following steps to build the [BLE Beacon] sample on the command line.
 
 1. Open a terminal window.
 
-2. Go to `my-workspace/connect-micro-project` directory created in the [Setting up the environment](../../setup.md#get-the-code) section.
+2. Go to `my-workspace/ncs-playground` directory created in the [Setting up the environment](../../setup.md#get-the-code) section.
 
     ``` bash linenums="1"
-    cd my-workspace/connect-micro-project
+    cd my-workspace/ncs-playground
     ```
 
 3. Build the sample using the `west` command, specifying the board (following the `-b` option) as `connectkit_nrf52840`:
@@ -70,4 +70,4 @@ After flashing the firmware to your board, complete the following steps to test 
 [Eddystone Protocol Specification]: https://github.com/google/eddystone/blob/master/protocol-specification.md
 [Eddystone-URL]: https://github.com/google/eddystone/tree/master/eddystone-url
 [nRF Connect for Mobile]: https://www.nordicsemi.com/Products/Development-tools/nRF-Connect-for-mobile
-[BLE Beacon]: https://github.com/makerdiary/connect-micro-project/tree/main/samples/ble/beacon
+[BLE Beacon]: https://github.com/makerdiary/ncs-playground/tree/main/samples/ble/beacon

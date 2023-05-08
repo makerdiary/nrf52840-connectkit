@@ -19,10 +19,10 @@ Use the following steps to build the [BLE Peripheral HIDS mouse] sample on the c
 
 1. Open a terminal window.
 
-2. Go to `my-workspace/connect-micro-project` directory created in the [Setting up the environment](../../setup.md#get-the-code) section.
+2. Go to `my-workspace/ncs-playground` directory created in the [Setting up the environment](../../setup.md#get-the-code) section.
 
     ``` bash linenums="1"
-    cd my-workspace/connect-micro-project
+    cd my-workspace/ncs-playground
     ```
 
 3. Build the sample using the `west` command, specifying the board (following the `-b` option) as `connectkit_nrf52840`:
@@ -60,4 +60,4 @@ After flashing the firmware to your board, complete the following steps to test 
 4. Push __USER__ button on the board. Observe that the mouse pointer on the computer moves to the left.
 
 [GATT Human Interface Device (HID) Service]: https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/nrf/libraries/bluetooth_services/services/hids.html#hids-readme
-[BLE Peripheral HIDS mouse]: https://github.com/makerdiary/connect-micro-project/tree/main/samples/ble/peripheral_hids_mouse
+[BLE Peripheral HIDS mouse]: https://github.com/makerdiary/ncs-playground/tree/main/samples/ble/peripheral_hids_mouse

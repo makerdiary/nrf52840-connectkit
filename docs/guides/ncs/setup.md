@@ -281,21 +281,21 @@ To install west, reopen the command prompt window as an administrator to ensure 
 
 ## Get the code
 
-To help you quickly build and run the samples on nRF52840 Connect Kit, we maintain a public repository named [connect-micro-project] which consists of nRF Connect SDK manifest repositories, additional hardware drivers and tested samples, etc.
+To help you quickly build and run the samples on nRF52840 Connect Kit, we maintain a public repository named [ncs-playground] which consists of nRF Connect SDK manifest repositories, additional hardware drivers and tested samples, etc.
 
 To clone the repositories, complete the following steps:
 
 1. Initialize the workspace folder (`my-workspace`) where all the required repositories will be cloned:
 
     ``` bash linenums="1"
-    west init -m https://github.com/makerdiary/connect-micro-project --mr main my-workspace
+    west init -m https://github.com/makerdiary/ncs-playground --mr main my-workspace
     ```
 
     !!! Tip
-        You can initialize west with the revision of [connect-micro-project] that you want to check out. For example, to check out the `v0.1.0-rc1` release, enter the following command:
+        You can initialize west with the revision of [ncs-playground] that you want to check out. For example, to check out the `v0.1.0-rc1` release, enter the following command:
 
         ``` bash linenums="1"
-        west init -m https://github.com/makerdiary/connect-micro-project --mr v0.1.0-rc1 my-workspace
+        west init -m https://github.com/makerdiary/ncs-playground --mr v0.1.0-rc1 my-workspace
         ```
 
 2. Enter the following commands to clone the project repositories:
@@ -314,7 +314,7 @@ To clone the repositories, complete the following steps:
     my-workspace
     |___ .west
     |___ bootloader
-    |___ connect-micro-project
+    |___ ncs-playground
     |___ modules
     |___ nrf
     |___ nrfxlib
@@ -550,7 +550,7 @@ It also contains additional host tools, such as custom QEMU and OpenOCD builds t
 [Chocolatey]:https://chocolatey.org/
 [Homebrew]: https://brew.sh/
 [west]: https://docs.zephyrproject.org/latest/develop/west/index.html
-[connect-micro-project]: https://github.com/makerdiary/connect-micro-project
+[ncs-playground]: https://github.com/makerdiary/ncs-playground
 [Zephyr Software Development Kit (SDK)]: https://docs.zephyrproject.org/latest/develop/toolchains/zephyr_sdk.html#toolchain-zephyr-sdk
 [latest Zephyr SDK bundle]: https://github.com/zephyrproject-rtos/sdk-ng/releases
 [udev]: https://en.wikipedia.org/wiki/Udev

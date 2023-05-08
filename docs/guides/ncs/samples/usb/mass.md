@@ -20,10 +20,10 @@ Use the following steps to build the [USB Mass Storage] sample on the command li
 
 1. Open a terminal window.
 
-2. Go to `my-workspace/connect-micro-project` directory created in the [Setting up the environment](../../setup.md#get-the-code) section.
+2. Go to `my-workspace/ncs-playground` directory created in the [Setting up the environment](../../setup.md#get-the-code) section.
 
     ``` bash linenums="1"
-    cd my-workspace/connect-micro-project
+    cd my-workspace/ncs-playground
     ```
 
 3. Build the sample using the `west` command, specifying the board (following the `-b` option) as `connectkit_nrf52840`. There are multiple configurations can be chosen:
@@ -82,5 +82,5 @@ After flashing the firmware to your board, complete the following steps to test 
 
     While a FAT-based file system can be mounted by many systems automatically, mounting the littlefs file system on a Linux or FreeBSD system can be accomplished using the [littlefs-fuse] utility.
 
-[USB Mass Storage]: https://github.com/makerdiary/connect-micro-project/tree/main/samples/usb/mass
+[USB Mass Storage]: https://github.com/makerdiary/ncs-playground/tree/main/samples/usb/mass
 [littlefs-fuse]: https://github.com/littlefs-project/littlefs-fuse

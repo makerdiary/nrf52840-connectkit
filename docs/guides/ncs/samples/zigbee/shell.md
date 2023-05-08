@@ -25,10 +25,10 @@ Use the following steps to build the [Zigbee Shell] sample on the command line.
 
 1. Open a terminal window.
 
-2. Go to `my-workspace/connect-micro-project` directory created in the [Setting up the environment](../../setup.md#get-the-code) section.
+2. Go to `my-workspace/ncs-playground` directory created in the [Setting up the environment](../../setup.md#get-the-code) section.
 
     ``` bash linenums="1"
-    cd my-workspace/connect-micro-project
+    cd my-workspace/ncs-playground
     ```
 
 3. Build each sample using the `west` command, specifying the board (following the `-b` option) as `connectkit_nrf52840`:
@@ -149,5 +149,5 @@ After flashing the Zigbee Shell firmware, complete the following steps to test i
         log enable inf zigbee.eprxzcl
         ```
 
-[Zigbee Shell]: https://github.com/makerdiary/connect-micro-project/tree/main/samples/zigbee/shell
+[Zigbee Shell]: https://github.com/makerdiary/ncs-playground/tree/main/samples/zigbee/shell
 [PuTTY]: https://apps.microsoft.com/store/detail/putty/XPFNZKSKLBP7RJ

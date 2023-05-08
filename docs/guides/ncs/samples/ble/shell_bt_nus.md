@@ -23,10 +23,10 @@ Use the following steps to build the [NUS shell transport] sample on the command
 
 1. Open a terminal window.
 
-2. Go to `my-workspace/connect-micro-project` directory created in the [Setting up the environment](../../setup.md#get-the-code) section.
+2. Go to `my-workspace/ncs-playground` directory created in the [Setting up the environment](../../setup.md#get-the-code) section.
 
     ``` bash linenums="1"
-    cd my-workspace/connect-micro-project
+    cd my-workspace/ncs-playground
     ```
 
 3. Build the sample using the `west` command, specifying the board (following the `-b` option) as `connectkit_nrf52840`:
@@ -73,4 +73,4 @@ After flashing the firmware to your board, complete the following steps to test 
 [Nordic UART Service (NUS)]: https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/nrf/libraries/bluetooth_services/services/nus.html#nus-service-readme
 [Web Device CLI]: https://wiki.makerdiary.com/web-device-cli/
 [Web Bluetooth supported]: https://github.com/WebBluetoothCG/web-bluetooth/blob/main/implementation-status.md
-[NUS shell transport]: https://github.com/makerdiary/connect-micro-project/tree/main/samples/ble/shell_bt_nus
+[NUS shell transport]: https://github.com/makerdiary/ncs-playground/tree/main/samples/ble/shell_bt_nus

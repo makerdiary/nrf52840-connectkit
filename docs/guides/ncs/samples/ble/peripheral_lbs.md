@@ -25,10 +25,10 @@ Use the following steps to build the [BLE Peripheral LBS] sample on the command 
 
 1. Open a terminal window.
 
-2. Go to `my-workspace/connect-micro-project` directory created in the [Setting up the environment](../../setup.md#get-the-code) section.
+2. Go to `my-workspace/ncs-playground` directory created in the [Setting up the environment](../../setup.md#get-the-code) section.
 
     ``` bash linenums="1"
-    cd my-workspace/connect-micro-project
+    cd my-workspace/ncs-playground
     ```
 
 3. Build the sample using the `west` command, specifying the board (following the `-b` option) as `connectkit_nrf52840`:
@@ -84,4 +84,4 @@ After flashing the firmware to your board, complete the following steps to test 
 
 [LED Button Service (LBS)]: https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/nrf/libraries/bluetooth_services/services/lbs.html#lbs-readme
 [nRF Connect for Mobile]: https://www.nordicsemi.com/Products/Development-tools/nRF-Connect-for-mobile
-[BLE Peripheral LBS]: https://github.com/makerdiary/connect-micro-project/tree/main/samples/ble/peripheral_lbs
+[BLE Peripheral LBS]: https://github.com/makerdiary/ncs-playground/tree/main/samples/ble/peripheral_lbs

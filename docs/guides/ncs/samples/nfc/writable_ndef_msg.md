@@ -37,10 +37,10 @@ Use the following steps to build the [Writable NDEF message] sample on the comma
 
 1. Open a terminal window.
 
-2. Go to `my-workspace/connect-micro-project` directory created in the [Setting up the environment](../../setup.md#get-the-code) section.
+2. Go to `my-workspace/ncs-playground` directory created in the [Setting up the environment](../../setup.md#get-the-code) section.
 
     ``` bash linenums="1"
-    cd my-workspace/connect-micro-project
+    cd my-workspace/ncs-playground
     ```
 
 3. Build the sample using the `west` command, specifying the board (following the `-b` option) as `connectkit_nrf52840`:
@@ -79,4 +79,4 @@ After flashing the firmware to your board, complete the following steps to test 
 4. Restart your board and touch the antenna again. Observe that the new message is displayed.
 
 [NFC Data Exchange Format (NDEF)]: https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/nrf/libraries/nfc/ndef/index.html#lib-nfc-ndef
-[Writable NDEF message]: https://github.com/makerdiary/connect-micro-project/tree/main/samples/nfc/writable_ndef_msg
+[Writable NDEF message]: https://github.com/makerdiary/ncs-playground/tree/main/samples/nfc/writable_ndef_msg

@@ -30,10 +30,10 @@ Use the following steps to build the [NFC Launch App] sample on the command line
 
 1. Open a terminal window.
 
-2. Go to `my-workspace/connect-micro-project` directory created in the [Setting up the environment](../../setup.md#get-the-code) section.
+2. Go to `my-workspace/ncs-playground` directory created in the [Setting up the environment](../../setup.md#get-the-code) section.
 
     ``` bash linenums="1"
-    cd my-workspace/connect-micro-project
+    cd my-workspace/ncs-playground
     ```
 
 3. Build the sample using the `west` command, specifying the board (following the `-b` option) as `connectkit_nrf52840`:
@@ -75,5 +75,5 @@ After flashing the firmware to your board, complete the following steps to test 
     Devices running iOS require the [nRF Toolbox] app to be installed before testing the sample. Devices running Android open Google Play when the application is not installed.
 
 [NFC Data Exchange Format (NDEF)]: https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/nrf/libraries/nfc/ndef/index.html#lib-nfc-ndef
-[NFC Launch App]: https://github.com/makerdiary/connect-micro-project/tree/main/samples/nfc/record_launch_app
+[NFC Launch App]: https://github.com/makerdiary/ncs-playground/tree/main/samples/nfc/record_launch_app
 [nRF Toolbox]: https://www.nordicsemi.com/Software-and-Tools/Development-Tools/nRF-Toolbox

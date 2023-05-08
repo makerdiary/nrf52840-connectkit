@@ -32,10 +32,10 @@ Use the following steps to build the [Thread Co-processor] sample on the command
 
 1. Open a terminal window.
 
-2. Go to `my-workspace/connect-micro-project` directory created in the [Setting up the environment](../../setup.md#get-the-code) section.
+2. Go to `my-workspace/ncs-playground` directory created in the [Setting up the environment](../../setup.md#get-the-code) section.
 
     ``` bash linenums="1"
-    cd my-workspace/connect-micro-project
+    cd my-workspace/ncs-playground
     ```
 
 3. Build the sample using the `west` command, specifying the board (following the `-b` option) as `connectkit_nrf52840`:
@@ -141,5 +141,5 @@ After flashing the firmware to your board, complete the following steps to test 
 [OpenThread’s Co-processor designs]: https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/nrf/ug_thread_architectures.html#thread-architectures-designs-cp
 [Radio co-processor (RCP)]: https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/nrf/ug_thread_architectures.html#thread-architectures-designs-cp-rcp
 [Zephyr’s OpenThread Co-Processor]: https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/zephyr/samples/net/openthread/coprocessor/README.html#coprocessor-sample
-[Thread Co-processor]: https://github.com/makerdiary/connect-micro-project/tree/main/samples/openthread/coprocessor
+[Thread Co-processor]: https://github.com/makerdiary/ncs-playground/tree/main/samples/openthread/coprocessor
 [Testing instructions in the CLI]: ./cli.md#testing

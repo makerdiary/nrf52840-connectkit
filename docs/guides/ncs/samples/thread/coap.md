@@ -32,10 +32,10 @@ Use the following steps to build the samples on the command line.
 
 1. Open a terminal window.
 
-2. Go to `my-workspace/connect-micro-project` directory created in the [Setting up the environment](../../setup.md#get-the-code) section.
+2. Go to `my-workspace/ncs-playground` directory created in the [Setting up the environment](../../setup.md#get-the-code) section.
 
     ``` bash linenums="1"
-    cd my-workspace/connect-micro-project
+    cd my-workspace/ncs-playground
     ```
 
 3. Build each sample using the `west` command, specifying the board (following the `-b` option) as `connectkit_nrf52840`:
@@ -102,8 +102,8 @@ After flashing the firmware to your boards, complete the following steps to test
 
 9. Tap the <kbd>u</kbd> command button to send a unicast `LIGHT_TOGGLE` message to the `/light` resource on the paired server node.
 
-[Thread CoAP Server]: https://github.com/makerdiary/connect-micro-project/tree/main/samples/openthread/coap_server
-[Thread CoAP Client]: https://github.com/makerdiary/connect-micro-project/tree/main/samples/openthread/coap_client
+[Thread CoAP Server]: https://github.com/makerdiary/ncs-playground/tree/main/samples/openthread/coap_server
+[Thread CoAP Client]: https://github.com/makerdiary/ncs-playground/tree/main/samples/openthread/coap_client
 [Zephyr CoAP API]: https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/zephyr/connectivity/networking/api/coap.html#coap-sock-interface
 [Nordic UART Service (NUS)]: https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/nrf/libraries/bluetooth_services/services/nus.html#nus-service-readme
 [nRF Toolbox]: https://www.nordicsemi.com/Software-and-Tools/Development-Tools/nRF-Toolbox
