@@ -47,10 +47,12 @@ theme:
     # - toc.integrate
   palette:
     - scheme: default
+      primary: custom
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
     - scheme: slate
+      primary: custom
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
