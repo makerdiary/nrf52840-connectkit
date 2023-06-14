@@ -260,6 +260,7 @@ nav:
         - Hello World: guides/ncs/samples/hello_world.md
         - Blinky: guides/ncs/samples/blinky.md
         - Button: guides/ncs/samples/button.md
+        - ADC: guides/ncs/samples/adc.md
         - Voltage Measurement: guides/ncs/samples/voltage_measurement.md
         - QSPI NOR Flash: guides/ncs/samples/qspi_flash.md
         - USB Device:
