@@ -39,7 +39,7 @@ Use the following steps to build the [BLE Observer] sample on the command line.
     === "Extended Scanning"
 
         ``` bash linenums="1"
-        west build -p always -b connectkit_nrf52840 samples/ble/observer -- -DCONF_FILE=prj_extended.conf
+        west build -p always -b connectkit_nrf52840 samples/ble/observer -- -DOVERLAY_CONFIG=overlay-extended.conf
         ```
 
     !!! Tip
