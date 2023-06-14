@@ -51,7 +51,7 @@ Use the following steps to build the samples on the command line.
     === "Light switch"
 
         ``` bash linenums="1"
-        west build -p always -b connectkit_nrf52840 samples/zigbee/light_switch
+        west build -p always -b connectkit_nrf52840 samples/zigbee/light_switch -- -DOVERLAY_CONFIG=overlay-multiprotocol_ble.conf
         ```  
 
     !!! Tip
