@@ -50,6 +50,7 @@ Try more samples on nRF52840 Connect Kit:
 * [Hello World](./samples/hello_world.md)
 * [Blinky](./samples/blinky.md)
 * [Button](./samples/button.md)
+* [ADC](./samples/adc.md)
 * [Voltage Measurement](./samples/voltage_measurement.md)
 * [QSPI NOR Flash](./samples/qspi_flash.md)
 * [USB HID Mouse](./samples/usb/hid_mouse.md)
