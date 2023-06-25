@@ -69,8 +69,8 @@ We offer an extensive set of documentation such as out of box experience, gettin
 nRF52840 Connect Kit is available on the following channels (click to go directly to the product):
 
 <a href="https://makerdiary.com/products/nrf52840-connectkit"><img alt="makerdiary store" display="inline" src="./docs/assets/images/makerdiary-store.png" width="260"></a>
-<a href="https://zaowubang.taobao.com"><img alt="Taobao" display="inline" src="./docs/assets/images/taobao-store.png" width="143"></a>
-<a href="https://www.tindie.com/products/zelin/nrf52840-connectkit/"><img alt="Tindie" display="inline" src="./docs/assets/images/tindie-store.png" width="128"></a>
+<a href="https://item.taobao.com/item.htm?spm=a1z10.5-c.w4002-2992523837.11.2df3715as0Kydn&id=725739500435"><img alt="Taobao" display="inline" src="./docs/assets/images/taobao-store.png" width="143"></a>
+<a href="https://www.tindie.com/products/makerdiary/nrf52840-connect-kit/"><img alt="Tindie" display="inline" src="./docs/assets/images/tindie-store.png" width="128"></a>
 
 ## Community Support
 
