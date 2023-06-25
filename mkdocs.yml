@@ -128,7 +128,7 @@ theme:
       - title: Introducing nRF Connect SDK
         cover: assets/images/ncs_intro_cover.png
         link: blog/introducing-ncs
-        date: May 4, 2023
+        date: June 25, 2023
         reading_time: 10 min
         excerpt: >-
             The nRF Connect SDK is a software development kit for building Bluetooth Low Energy, Wi-Fi,
@@ -137,7 +137,7 @@ theme:
       - title: Introducing CircuitPython
         cover: assets/images/circuitpython_intro_cover.png
         link: blog/introducing-circuitpython
-        date: April 27, 2023
+        date: June 25, 2023
         reading_time: 5 min
         excerpt: >-
             CircuitPython is an implementation of Python for microcontrollers. With CircuitPython,
@@ -146,7 +146,7 @@ theme:
       - title: nRF52840 Connect Kit is Here!
         cover: assets/images/nrf52840-connectkit-cover.png
         link: blog/nrf52840-connectkit-is-here
-        date: April 20, 2023
+        date: June 25, 2023
         reading_time: 3 min
         excerpt: >-
             We are excited to announce that nRF52840 Connect Kit is now available! This design comes

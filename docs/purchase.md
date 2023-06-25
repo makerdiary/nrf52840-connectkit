@@ -5,8 +5,8 @@
 nRF52840 Connect Kit is available on the following channels (click to go directly to the product):
 
 [![makerdiary store](assets/images/makerdiary-store.png){ width='260' display='inline' }](https://makerdiary.com/products/nrf52840-connectkit)
-[![Taobao](assets/images/taobao-store.png){ width='143' display='inline' }](https://zaowubang.taobao.com)
-[![Tindie](assets/images/tindie-store.png){ width='128' display='inline' }](https://www.tindie.com/products/zelin/nrf52840-connectkit/)
+[![Taobao](assets/images/taobao-store.png){ width='143' display='inline' }](https://item.taobao.com/item.htm?spm=a1z10.5-c.w4002-2992523837.11.2df3715as0Kydn&id=725739500435)
+[![Tindie](assets/images/tindie-store.png){ width='128' display='inline' }](https://www.tindie.com/products/makerdiary/nrf52840-connect-kit/)
 
 
 ## Request Large Volume Pricing
