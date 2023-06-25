@@ -9,6 +9,6 @@
 
 ## Documentation
 
-### V1.0.0 <small>March 31, 2023</small> { id="DOC_V1.0.0" }
+### V1.0.0 <small>June 25, 2023</small> { id="DOC_V1.0.0" }
 
-- Initial release
+- The first public release
