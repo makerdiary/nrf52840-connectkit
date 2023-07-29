@@ -152,6 +152,11 @@
       grid-template-columns: repeat(auto-fit,minmax(19rem,1fr));
       margin-bottom: 2.2rem;
     }
+    @media screen and (max-width: 29.9375em) {
+      .md-typeset .mdx-multicolumn {
+        grid-template-columns: 1fr;
+      }
+    }
     .md-typeset .mdx-multicolumn>ul {
       display: contents;
     }

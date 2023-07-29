@@ -85,31 +85,31 @@ theme:
       heading: Everything you would expect
       columns:
         - icon: nordic-chip
-          title: Featuring the nRF52840 SoC
+          title: Designed with nRF52840
           description: >-
-            Built around the nRF52840 SoC, featuring a 64 MHz Arm® Cortex™-M4F processor with 1 MB
+            Designed with the nRF52840 SoC, featuring a 64 MHz Arm® Cortex™-M4F processor with 1 MB
             Flash, 256 KB RAM and ARM TrustZone® CryptoCell cryptographic unit, supporting Bluetooth LE,
             Bluetooth mesh, Thread, Zigbee, 802.15.4, ANT and 2.4 GHz proprietary stacks.
         - icon: material/hexagon-multiple
-          title: Rich peripherals and features
+          title: Rich peripherals & features
           description: >-
             Feature external 64 Mbit QSPI flash, User programmable RGB LED and Buttons as well as numerous
             peripherals such as USB 2.0, NFC-A, GPIO, UART, SPI, TWI, PDM, I2S, QSPI, PWM, ADC, QDEC to support
             a wide range of applications.
         - icon: material/chip
-          title: Easy-to-use Form Factor
+          title: Easy-to-use form factor
           description: >-
             Easy-to-use form factor with USB-C and 40 pin DIP/SMT type, including up to 32 multi-function
             GPIO pins (7 can be used as ADC inputs) and Serial Wire Debug (SWD) port. Available in Chip antenna
             and U.FL receptacle options to support various wireless scenarios.
         - icon: material/cable-data
-          title: Flexible power management
+          title: Flexible power supply
           description: >-
-            Simple and flexible power management, supporting various options for easily powering
+            Simple and flexible power supply, supporting various options for easily powering
             the unit from USB-C, external supplies or batteries. Depending on the wide input voltage
             (1.8–5.5V), it automatically operates in boost or buck mode to output 3.3V.
         - icon: material/link-box-variant
-          title: Built on open source
+          title: Built on Open Source
           description: >-
             Support Nordic Semi's nRF Connect SDK, integrating the Zephyr RTOS, protocol stacks, samples,
             hardware drivers and much more. We also offer Python support, allowing you access hardware-specific
