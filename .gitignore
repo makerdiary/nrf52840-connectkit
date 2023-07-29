@@ -16,5 +16,5 @@ build_*
 # mkdocs
 site
 
-# assets
-./assets
+# macOS internals
+.DS_Store
