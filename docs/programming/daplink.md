@@ -1,4 +1,4 @@
-# Using DAPLink on nRF52840 Connect Kit
+# Using DAPLink Firmware
 
 One nRF52840 Connect Kit can be used to reprogram and debug another, using the DAPLink interface firmware, which creates a bridge between your development computer and the target's debug access port.
 

@@ -14,7 +14,7 @@ Connect the nRF52840 Connect Kit to your computer and turn it on. Then place it 
 
 ## Capturing data in Wireshark
 
-You can start capture manually from Wireshark with or without the out-of-band metadata. Capturing in Wireshark requires [installing an nRF Sniffer plugin](../installation/#installing-the-nrf-sniffer-capture-plugin-in-wireshark).
+You can start capture manually from Wireshark with or without the out-of-band metadata. Capturing in Wireshark requires [installing an nRF Sniffer plugin](./installation.md/#installing-the-nrf-sniffer-capture-plugin-in-wireshark).
 
 ### Running nRF Sniffer in Wireshark
 

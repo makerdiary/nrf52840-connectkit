@@ -96,5 +96,5 @@ Use the nRF Sniffer for Bluetooth LE to see periodic advertise data from a Perio
 1. [Run the nRF Sniffer] (if not already running).
 2. Select your device from the device list.
 
-[Run the nRF Sniffer]: ../running-sniffer
+[Run the nRF Sniffer]: ./running-sniffer.md
 [Bluetooth Core Specification]: https://www.bluetooth.com/specifications/bluetooth-core-specification/

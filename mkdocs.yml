@@ -247,8 +247,8 @@ nav:
     - Programming:
       - programming/index.md
       - Using the UF2 Bootloader: programming/uf2boot.md
-      - Using DAPLink on nRF52840 Connect Kit: programming/daplink.md
-      - Using Pitaya-Link debug probe: programming/pitaya-link.md
+      - Using DAPLink Firmware: programming/daplink.md
+      - Using Pitaya-Link Debug Probe: programming/pitaya-link.md
     - Resources: resources.md
     - Contributing: CONTRIBUTING.md
   - Developer Guides:

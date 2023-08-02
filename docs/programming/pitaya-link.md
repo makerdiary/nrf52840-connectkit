@@ -1,4 +1,4 @@
-# Using Pitaya-Link debug probe
+# Using Pitaya-Link Debug Probe
 
 Pitaya-Link is a low-cost debug probe based on the CMSIS-DAP (also known as DAPLink) protocol standard. It can be used to program and debug the application software running on Arm Cortex Microcontrollers.
 
