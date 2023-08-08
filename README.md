@@ -91,7 +91,7 @@ Copyright (c) 2016-2023 Makerdiary. See [LICENSE](./LICENSE) for further details
 [programming]: https://wiki.makerdiary.com/nrf52840-connectkit/programming
 [ble-sniffer]: https://wiki.makerdiary.com/nrf52840-connectkit/guides/ble-sniffer
 [nrf802154-sniffer]: https://wiki.makerdiary.com/nrf52840-connectkit/guides/nrf802154-sniffer/
-[quick-start]: https://wiki.makerdiary.com/nrf52840-connectkit/nrf52840-connectkit/assets/attachments/nrf52840-connectkit-quick-start-guide.pdf
+[quick-start]: https://wiki.makerdiary.com/nrf52840-connectkit/assets/attachments/nrf52840-connectkit-quick-start-guide.pdf
 [hardware-description]: https://wiki.makerdiary.com/nrf52840-connectkit/hardware
 [schematic]: https://wiki.makerdiary.com/nrf52840-connectkit/assets/attachments/nrf52840-connect-kit-schematic-v1.0.pdf
 [3d-models]: https://wiki.makerdiary.com/nrf52840-connectkit/assets/attachments/nrf52840-connect-kit-3d-cad-step-models.zip
