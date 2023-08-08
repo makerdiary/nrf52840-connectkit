@@ -74,10 +74,7 @@ nRF52840 Connect Kit is available on the following channels (click to go directl
 
 ## Community Support
 
-Community support is provided via [GitHub Discussions][discussions]. You can also reach us on
-[Makerdiary Community][community].
-
-We would love to have more developers contribute to this project! If you're passionate about making this project better, see our [Contributing Guidelines][contributing] for more information.
+Community support is provided via [GitHub Discussions][discussions]. We would love to have more developers contribute to this project! If you're passionate about making this project better, see our [Contributing Guidelines][contributing] for more information.
 
 ## License
 
@@ -96,5 +93,4 @@ Copyright (c) 2016-2023 Makerdiary. See [LICENSE](./LICENSE) for further details
 [schematic]: https://wiki.makerdiary.com/nrf52840-connectkit/assets/attachments/nrf52840-connect-kit-schematic-v1.0.pdf
 [3d-models]: https://wiki.makerdiary.com/nrf52840-connectkit/assets/attachments/nrf52840-connect-kit-3d-cad-step-models.zip
 [discussions]: https://github.com/makerdiary/nrf52840-connectkit/discussions
-[community]: https://community.makerdiary.com
 [contributing]: https://wiki.makerdiary.com/nrf52840-connectkit/CONTRIBUTING
