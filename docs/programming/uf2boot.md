@@ -133,5 +133,5 @@ To update the bootloader, complete the following steps:
 !!! question "How to recovery when the UF2 bootloader is broken"
     The only method to recovery from a broken bootloader is using an external debugger to download a fresh `.hex`-format bootloader. The `.hex`-format bootloader is also located in the [`firmware/uf2_bootloader`](https://github.com/makerdiary/nrf52840-connectkit/tree/main/firmware/uf2_bootloader) folder. Follow the instructions below for programming:
     
-    * [Using DAPLink on nRF52840 Connect Kit](./daplink.md)
-    * [Using Pitaya-Link debug probe](./pitaya-link.md)
+    * [Using DAPLink Firmware](./daplink.md)
+    * [Using Pitaya-Link Debug Probe](./pitaya-link.md)
