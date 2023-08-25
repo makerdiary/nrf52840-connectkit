@@ -1,32 +1,20 @@
 ---
-template: article.html
+title: nRF52840 Connect Kit is Here!
+date: 2023-06-25
+authors:
+  - makerdiary
+cover: cover.png
 description: >
-  We are excited to announce that nRF52840 Connect Kit is now available! It's a new member of our nRF52840-based prototyping kit family. It comes in a more mainstream form factor with USB-C and 40 pin DIP/SMT type. A new power architecture is introduced to support various options for easily powering the unit from USB, external supplies or batteries. We will also offer Chip antenna or U.FL receptacle option for selection.
-search:
-  exclude: false
-hide:
-  - feedback
+  We are excited to announce the nRF52840 Connect Kit! It comes with a more mainstream form factor, USB-C, 64 Mbit QSPI flash, flexible power management and a rich set of features.
 ---
+
+![](cover.png){ loading=lazy }
 
 # nRF52840 Connect Kit is Here!
 
-<aside class="mdx-author" markdown>
-![@makerdiary][@makerdiary avatar]
-
-<span>[makerdiary]</span>
-<span>
-:octicons-calendar-24: June 25, 2023 ·
-:octicons-clock-24: 3 min read
-</span>
-</aside>
-
-[makerdiary]: https://makerdiary.com
-[@makerdiary avatar]: https://avatars.githubusercontent.com/u/8767354
-
-
 We are excited to announce that nRF52840 Connect Kit is now available! It's a new member of our nRF52840-based prototyping kit family. It comes in a more mainstream form factor with USB-C and 40 pin DIP/SMT type. A new power architecture is introduced to support various options for easily powering the unit from USB, external supplies or batteries. We will also offer Chip antenna or U.FL receptacle option for selection.
 
-![](../assets/images/nrf52840_connectkit_hero.png)
+![](../../../assets/images/nrf52840_connectkit_hero.png){ loading=lazy }
 
 With nRF52840 Connect Kit you can quickly and easily build your next connected project supporting Bluetooth LE, Bluetooth mesh, NFC, Thread, Zigbee, 802.15.4, ANT and 2.4 GHz proprietary stacks. Easy-to-use form factor, USB-C, 64 Mbit QSPI flash, flexible power management and a rich set of features enable designs to meet a wide range of applications.
 
@@ -40,4 +28,4 @@ nRF52840 Connect Kit has support for Nordic Semi's nRF Connect SDK, which integr
 
 In addition, we offer an extensive set of documentation such as out of box experience, getting started and developer guides, which can help you save big by reducing development effort.
 
-Interested in our brand new nRF52840 Connect Kit? You can get it from [the official store](https://makerdiary.com/products/nrf52840-connectkit) or refer to our [wiki page](../index.md) for more technical resources.
+Interested in our brand new nRF52840 Connect Kit? You can get it from [the official store](https://makerdiary.com/products/nrf52840-connectkit) or refer to our [wiki page](../../../index.md) for more technical resources.

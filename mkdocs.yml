@@ -120,42 +120,47 @@ theme:
             We offer an extensive set of documentation such as out of box experience, getting started and
             developer guides, which can help you save big by reducing development effort. The documentation
             is hosted as a GitHub repository that allows managing the updates over time.
-  blog:
-    heading: Latest posts
-    catalog: blog
-    newsletter: https://makerdiary.com/newsletter
-    articles:
-      - title: Introducing nRF Connect SDK
-        cover: assets/images/ncs_intro_cover.png
-        link: blog/introducing-ncs
-        date: June 25, 2023
-        reading_time: 10 min
-        excerpt: >-
-            The nRF Connect SDK is a software development kit for building Bluetooth Low Energy, Wi-Fi,
-            cellular IoT, Bluetooth mesh, Thread, Zigbee and Matter products based on Nordic Semiconductor's
-            wireless devices.
-      - title: Introducing CircuitPython
-        cover: assets/images/circuitpython_intro_cover.png
-        link: blog/introducing-circuitpython
-        date: June 25, 2023
-        reading_time: 5 min
-        excerpt: >-
-            CircuitPython is an implementation of Python for microcontrollers. With CircuitPython,
-            there are no upfront desktop downloads needed. Once you get your board set up, open any
-            text editor, and start editing code.
-      - title: nRF52840 Connect Kit is Here!
-        cover: assets/images/nrf52840-connectkit-cover.png
-        link: blog/nrf52840-connectkit-is-here
-        date: June 25, 2023
-        reading_time: 3 min
-        excerpt: >-
-            We are excited to announce that nRF52840 Connect Kit is now available! This design comes
-            with a more mainstream form factor, USB-C, 64 Mbit QSPI flash, flexible power management
-            and a rich set of features.
-
+    news:
+      id: what-is-new
+      heading: What's new
+      viewall: blog
+      posts:
+        - title: Introducing nRF Connect SDK
+          excerpt: >-
+            nRF Connect SDK is a scalable and unified software development kit for building products based on
+            Nordic Semiconductor's wireless devices.
+          cover: blog/introducing-nrf-connect-sdk/cover.png
+          url: blog/introducing-nrf-connect-sdk
+          date: 2023-06-27
+          readtime: 6
+        - title: Introducing CircuitPython
+          excerpt: >-
+            CircuitPython is an implementation of Python for microcontrollers. Once you get your board set up,
+            open any text editor, and start editing code.
+          cover: blog/introducing-circuitpython/cover.png
+          url: blog/introducing-circuitpython
+          date: 2023-06-26
+          readtime: 4
+        - title: nRF52840 Connect Kit is Here!
+          excerpt: >-
+            We are excited to announce the nRF52840 Connect Kit! It comes with a more mainstream form factor,
+            USB-C, 64 Mbit QSPI flash, flexible power management and a rich set of features.
+          cover: blog/nrf52840-connect-kit-is-here/cover.png
+          url: blog/nrf52840-connect-kit-is-here
+          date: 2023-06-25
+          readtime: 4
 # Plugins
 plugins:
   - search
+  - blog:
+      blog_dir: blog
+      post_date_format: medium
+      pagination_per_page: 6
+      pagination_keep_content: true
+      post_url_format: "{slug}"
+      post_readtime_words_per_minute: 128
+      categories: false
+      archive: false
   # - git-revision-date-localized
   - minify:
       minify_html: true
@@ -318,7 +323,4 @@ nav:
       - Inspecting captured data: guides/nrf802154-sniffer/inspecting-data.md
   - Blog:
       - blog/index.md
-      - Introducing nRF Connect SDK: blog/introducing-ncs.md
-      - Introducing CircuitPython: blog/introducing-circuitpython.md
-      - nRF52840 Connect Kit is Here!: blog/nrf52840-connectkit-is-here.md
   - Discussions: https://github.com/makerdiary/nrf52840-connectkit/discussions
