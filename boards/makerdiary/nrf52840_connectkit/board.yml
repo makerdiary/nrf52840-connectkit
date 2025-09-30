@@ -1,0 +1,6 @@
+board:
+  name: nrf52840_connectkit
+  full_name: nRF52840 Connect Kit
+  vendor: makerdiary
+  socs:
+  - name: nrf52840
